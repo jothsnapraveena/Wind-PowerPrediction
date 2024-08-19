@@ -24,7 +24,7 @@ tf.random.set_seed(seed)
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    wind = pd.read_csv(r"D:\capstone projects\prediction_app\WIND.csv")
+    wind = pd.read_csv("WIND.csv")
     wind['Date/Time'] = pd.to_datetime(wind['Date/Time'], format="%d %m %Y %H:%M")
     wind['Date'] = wind['Date/Time'].dt.normalize()
     wind['Hour'] = wind['Date/Time'].dt.hour
@@ -271,7 +271,7 @@ elif model_option == "LSTM":
     X_test_scaled = X_test_scaled.reshape(X_test_scaled.shape[0], 1, X_test_scaled.shape[1])
 
     # Build LSTM model
-    model_load_path = r'D:\capstone projects\prediction_app\best_lstm_model_0.92.h5'
+    model_load_path = 'best_lstm_model_0.92.h5'
    # Load the model
     model = tf.keras.models.load_model(model_load_path)
     predictions_scaled=model.predict(X_test_scaled)
