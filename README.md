@@ -67,6 +67,9 @@ This project involves the development and deployment of a **wind power forecasti
 
 4. **Access the Application**:
    Open the URL displayed in your terminal (e.g., http://localhost:8501) in a web browser.
+5. **Access the Jupyternotebook**:
+   https://github.com/jothsnapraveena/wind-power-predictionproject
+
 
 ---
 
@@ -76,7 +79,7 @@ The dataset contains key variables for wind power forecasting, such as:
 - Wind Direction
 - Theoretical Power
 
-The dataset was preprocessed to handle missing values, outliers, and multivariate dependencies.
+The dataset was preprocessed to handle missing values, outliers
 
 ---
 
